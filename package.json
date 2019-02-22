@@ -1,0 +1,32 @@
+{
+  "name": "lectura-infantil",
+  "version": "0.1.0",
+  "description": "Proyecto para ayudar al aprendizaje de lectura en niños de 6 años",
+  "private": true,
+  "main": "dist/desktopApp.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jan Cardozo <jan.alfredo.cardozo@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "babel-loader": "^8.0.5",
+    "electron": "^4.0.5",
+    "eslint": "^5.14.1",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.3.3",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "@types/react": "^16.8.4",
+    "@types/react-dom": "^16.8.2",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2"
+  }
+}
