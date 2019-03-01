@@ -3,10 +3,13 @@ const path = require("path");
 module.exports = {
     mode: "development",
     target: "electron-main",
-    entry: './src/desktopApp.ts',
+    entry: {
+        desktopApp: './src/desktopApp.tsx',
+        lecturaApp: './src/lecturaApp.tsx'
+    },
     output: {
-        filename: 'desktopApp.js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist'),
+        filename: '[name].js'
     },
     module: {
         rules: [

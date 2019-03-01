@@ -1,16 +1,14 @@
 import * as React from 'react';
 
-export default (props) => {
-    return (
+export default (props) => (
+    <div>
         <div>
-            <div>
-                <span>Palabra:</span>
-                <input type="text" />
-            </div>
-            <div>
-                <span>Imagen:</span>
-                <input type="file" />
-            </div>
+            <span>Palabra:</span>
+            <input type="text" />
         </div>
-    );
-}
+        <div>
+            <span>Imagen:</span>
+            <input type="file" />
+        </div>
+    </div>
+);
