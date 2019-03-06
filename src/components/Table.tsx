@@ -4,11 +4,11 @@ import TableItem from "./TableItem";
 export default (props) => (
     <table>
         <thead>
-            <td>Palabras</td>
-            <td>Imagenes</td>
+            <th>Palabras</th>
+            <th>Imagenes</th>
         </thead>
         <tbody>
-            {props.words.map( (item) => { <TableItem name="{item.name}" img="{item.img}" /> } )}
+            {props.words.map( (item) => { <TableItem word="{item.word}" img="{item.img}" /> } )}
         </tbody>
     </table>
 );

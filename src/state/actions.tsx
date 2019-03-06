@@ -4,9 +4,14 @@ export const EDIT_WORD = 'EDIT_WORD';
 export const SIGNAL_CORRECT_ANSWER = 'SIGNAL_CORRECT_ANSWER';
 export const SIGNAL_WRONG_ANSWER = 'SIGNAL_WRONG_ANSWER';
 
+interface AddWordPayload {
+    word: string,
+    img: string
+}
+
 export interface FluxStandardAction {
     type: string,
-    payload?: object
+    payload?: AddWordPayload
 }
 
 function createStandardAction(type: string, payload?: object): FluxStandardAction {

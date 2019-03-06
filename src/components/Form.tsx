@@ -10,5 +10,8 @@ export default (props) => (
             <span>Imagen:</span>
             <input type="file" />
         </div>
+        <div>
+            <button onClick={props.onSaveWord}>Guardar</button>
+        </div>
     </div>
 );
