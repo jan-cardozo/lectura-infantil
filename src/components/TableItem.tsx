@@ -1,8 +1,8 @@
 import * as React from "react";
 
 export default (props) => (
-    <li>
-        <span>{props.word}</span>
-        <img src="{props.img}" alt=""/>
-    </li>
+    <tr>
+        <td><span>{props.word}</span></td>
+        <td><img src={props.img} alt=""/></td>
+    </tr>
 );

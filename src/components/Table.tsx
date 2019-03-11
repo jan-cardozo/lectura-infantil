@@ -8,7 +8,7 @@ export default (props) => (
             <th>Imagenes</th>
         </thead>
         <tbody>
-            {props.words.map( (item) => { <TableItem word="{item.word}" img="{item.img}" /> } )}
+            {props.words.map( (item, index) => { return (<TableItem key={index} word={item.word} img={item.img} />) } )}
         </tbody>
     </table>
 );
