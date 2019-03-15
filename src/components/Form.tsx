@@ -1,17 +1,25 @@
 import * as React from 'react';
 
-export default (props) => (
-    <div>
-        <div>
-            <span>Palabra:</span>
-            <input type="text" />
-        </div>
-        <div>
-            <span>Imagen:</span>
-            <input type="file" />
-        </div>
-        <div>
-            <button onClick={props.onSaveWord}>Guardar</button>
-        </div>
-    </div>
-);
+export default class Form extends React.Component {
+    captureInput(e) {
+        console.log(e);
+        
+    }
+    render() {
+        return (
+            <div>
+                <div>
+                    <span>Palabra:</span>
+                    <input type="text" onChange={this.captureInput} />
+                </div>
+                <div>
+                    <span>Imagen:</span>
+                    <input type="file" />
+                </div>
+                <div>
+                    <button {/*onClick={this.props.onSaveWord}*/}>Guardar</button>
+                </div>
+            </div>
+        );
+    }
+}
