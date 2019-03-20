@@ -4,7 +4,7 @@ import Table from "./Table";
 
 export default (props) => (
     <div>
-        <Form onSaveWord={props.onSaveWord} />
+        <Form saveWord={props.saveWord} />
         <Table words={props.words}/>
     </div>
 );

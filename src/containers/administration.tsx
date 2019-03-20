@@ -10,9 +10,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onSaveWord: (word, image) => {
-            console.log(word);
-            dispatch(addWord("test", "imagen"));
+        saveWord: (word, image) => {
+            dispatch(addWord(word, image));
         }
     };
 };

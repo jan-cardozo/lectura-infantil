@@ -18,10 +18,16 @@ const initialState = {
 export default function stateReducer(state = initialState, action: FluxStandardAction) {
     switch (action.type) {
         case ADD_WORD:
-            return Object.assign({}, state, {
+            const words = state.words.map(v => v);
+            words.push({
                 word: action.payload.word,
                 img: action.payload.img
             });
+            
+            return Object.assign({}, state, {
+                words: words
+            });
     }
+    
     return state;
 }

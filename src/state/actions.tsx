@@ -23,13 +23,14 @@ function createStandardAction(type: string, payload?: object): FluxStandardActio
             payload: payload
         });
     }
+    
     return action;
 }
 
 export function addWord(word: string, image: string) {
     return createStandardAction(ADD_WORD, {
         word: word,
-        image: image
+        img: image
     });
 }
 
