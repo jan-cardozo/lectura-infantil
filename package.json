@@ -6,29 +6,32 @@
   "main": "dist/desktopApp.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Jan Cardozo <jan.alfredo.cardozo@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.3.3",
-    "@babel/preset-env": "^7.3.1",
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
+    "@types/jest": "^24.0.11",
+    "babel-jest": "^24.5.0",
     "babel-loader": "^8.0.5",
-    "electron": "^4.0.5",
-    "eslint": "^5.14.1",
+    "electron": "^4.1.1",
+    "eslint": "^5.15.3",
+    "jest": "^24.5.0",
     "ts-loader": "^5.3.3",
-    "typescript": "^3.3.3",
-    "webpack": "^4.29.5",
-    "webpack-cli": "^3.2.3"
+    "typescript": "^3.3.4000",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
   },
   "dependencies": {
-    "@types/react": "^16.8.4",
-    "@types/react-dom": "^16.8.2",
-    "@types/react-redux": "^7.0.1",
-    "react": "^16.8.2",
-    "react-dom": "^16.8.2",
+    "@types/react": "^16.8.8",
+    "@types/react-dom": "^16.8.3",
+    "@types/react-redux": "^7.0.5",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
     "react-redux": "^6.0.1",
     "redux": "^4.0.1"
   }

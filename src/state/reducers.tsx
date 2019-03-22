@@ -1,19 +1,19 @@
 import { FluxStandardAction, ADD_WORD } from "./actions";
 
-const initialState = {
-    streak: 0,
-    words: [
-        {
-            word: "tapa",
-            img: "tapa.png"
-        }
-    ]
-}
-
 // const initialState = {
 //     streak: 0,
-//     words: []
+//     words: [
+//         {
+//             word: "tapa",
+//             img: "tapa.png"
+//         }
+//     ]
 // }
+
+const initialState = {
+    streak: 0,
+    words: []
+}
 
 export default function stateReducer(state = initialState, action: FluxStandardAction) {
     switch (action.type) {
